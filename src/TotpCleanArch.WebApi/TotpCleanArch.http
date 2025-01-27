@@ -1,0 +1,6 @@
+@TotpCleanArch_HostAddress = http://localhost:5081
+
+GET {{TotpCleanArch_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

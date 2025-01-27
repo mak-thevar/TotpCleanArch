@@ -1,0 +1,15 @@
+# Use the official PostgreSQL image from Docker Hub
+FROM postgres:17
+
+# Set environment variables for the PostgreSQL database
+ENV POSTGRES_DB=defaultdb
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=postgres
+ENV POSTGRES_HOST_AUTH_METHOD=trust
+
+
+# Expose the PostgreSQL port
+EXPOSE 5431
+
+# Start the PostgreSQL service
+CMD ["postgres"]
